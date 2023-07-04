@@ -1,0 +1,5 @@
+
+http://localhost {
+    extra_string Hello, World!
+	respond "Hello, world! Company"
+}

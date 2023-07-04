@@ -1,0 +1,13 @@
+version: '3'
+services:
+  caddy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8085:80'
+    volumes:
+      - ${PWD}/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+volumes:
+  caddy_data:

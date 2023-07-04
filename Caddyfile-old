@@ -1,0 +1,8 @@
+#{
+	order replace after encode
+}
+
+http://localhost {
+    replace Company Besnik!
+	respond "Hello, world! Company"
+}
