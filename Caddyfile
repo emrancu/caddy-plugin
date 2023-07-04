@@ -1,5 +1,8 @@
+{
+	order replace after encode
+}
 
 http://localhost {
-    extra_string Hello, World!
+    replace Company Besnik!
 	respond "Hello, world! Company"
 }
